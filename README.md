@@ -17,7 +17,7 @@
 
 	$ cd
 	$ cd /tmp
-	$ wget -O fingil.tar.gz https://github.com/alireza-amirsamimi/pdmt/archive/master.tar.gz
+	$ wget -O fingil.tar.gz https://github.com/alireza-amirsamimi/fingil/archive/master.tar.gz
 	$ tar  --overwrite --overwrite-dir -xf fingil.tar.gz
 	$ chmod +x /tmp/fingil-master/fingil
 	$ sudo  mv -f /tmp/fingil-master/fingil /usr/bin
