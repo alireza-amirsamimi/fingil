@@ -1,0 +1,233 @@
+#!/bin/bash
+#Figil writed by alireza.amirsamimi@ubuntu.ir
+case_function_per (){
+  case "$line" in
+    "ض")
+    xdotool type "q";;
+    "ص")
+    xdotool type "w";;
+    "ث")
+    xdotool type "e";;
+    "ق")
+    xdotool type "r";;
+    "ف")
+    xdotool type "t";;
+    "غ")
+    xdotool type "y";;
+    "ع")
+    xdotool type "u";;
+    "ه")
+    xdotool type "i";;
+    "خ")
+    xdotool type "o";;
+    "ح")
+    xdotool type "p";;
+    "ج")
+    xdotool type "[";;
+    "چ")
+    xdotool type "]";;
+    "ش")
+    xdotool type "a";;
+    "س")
+    xdotool type "s";;
+    "ی")
+    xdotool type "d";;
+    "ب")
+    xdotool type "f";;
+    "ل")
+    xdotool type "g";;
+    "ا")
+    xdotool type "h";;
+    "ت")
+    xdotool type "j";;
+    "ن")
+    xdotool type "k";;
+    "م")
+    xdotool type "l";;
+    "ک")
+    xdotool type ";";;
+    "گ")
+    xdotool type "'";;
+    "ظ")
+    xdotool type "z";;
+    "ط")
+    xdotool type "x";;
+    "ز")
+    xdotool type "c";;
+    "ر")
+    xdotool type "v";;
+    "ذ")
+    xdotool type "b";;
+    "د")
+    xdotool type "n";;
+    "پ")
+    xdotool type "m";;
+    "و")
+    xdotool type ",";;
+    "ژ‍")
+    xdotool type "C";;
+    "۱")
+    xdotool type "1";;
+    "۲")
+    xdotool type "2";;
+    "۳")
+    xdotool type "3";;
+    "۴")
+    xdotool type "4";;
+    "۵")
+    xdotool type "5";;
+    "۶")
+    xdotool type "6";;
+    "۷")
+    xdotool type "7";;
+    "۸")
+    xdotool type "8";;
+    "۹")
+    xdotool type "9";;
+    "۰")
+    xdotool type "0";;
+    "")
+    xdotool type " ";;
+    ")")
+    xdotool type "(";;
+    "(")
+    xdotool type ")";;
+    "؟")
+    xdotool type "?";;
+    "٬")
+    xdotool type "@";;
+    "٪")
+    xdotool type "%";;
+    "×")
+    xdotool type "^";;
+    "،")
+    xdotool type "&";;
+    *)
+    xdotool type "$line";;
+  esac
+}
+case_function_en (){
+  case $line in
+    "q")
+    xdotool type "ض";;
+    "w")
+    xdotool type "ص";;
+    "e")
+    xdotool type "ث";;
+    "r")
+    xdotool type "ق";;
+    "t")
+    xdotool type "ف";;
+    "y")
+    xdotool type "غ";;
+    "u")
+    xdotool type "ع";;
+    "i")
+    xdotool type "ه";;
+    "o")
+    xdotool type "خ";;
+    "p")
+    xdotool type "ح";;
+    "[")
+    xdotool type "ج";;
+    "]")
+    xdotool type "چ";;
+    "a")
+    xdotool type "ش";;
+    "s")
+    xdotool type "س";;
+    "d")
+    xdotool type "ی";;
+    "f")
+    xdotool type "ب";;
+    "g")
+    xdotool type "ل";;
+    "h")
+    xdotool type "ا";;
+    "j")
+    xdotool type "ت";;
+    "k")
+    xdotool type "ن";;
+    "l")
+    xdotool type "م";;
+    ";")
+    xdotool type "ک";;
+    "'")
+    xdotool type "گ";;
+    "z")
+    xdotool type "ظ";;
+    "x")
+    xdotool type "ط";;
+    "c")
+    xdotool type "ز";;
+    "v")
+    xdotool type "ر";;
+    "b")
+    xdotool type "ذ";;
+    "n")
+    xdotool type "د";;
+    "m")
+    xdotool type "پ";;
+    ",")
+    xdotool type "و";;
+    "C")
+    xdotool type "ژ";;
+    "1")
+    xdotool type "۱";;
+    "2")
+    xdotool type "۲";;
+    "3")
+    xdotool type "۳";;
+    "4")
+    xdotool type "۴";;
+    "5")
+    xdotool type "۵";;
+    "6")
+    xdotool type "۶";;
+    "7")
+    xdotool type "۷";;
+    "8")
+    xdotool type "۸";;
+    "9")
+    xdotool type "۹";;
+    "0")
+    xdotool type "۰";;
+    "?")
+    xdotool type "؟";;
+    "(")
+    xdotool type ")";;
+    ")")
+    xdotool type "(";;
+    "")
+    xdotool type " ";;
+    "@")
+    xdotool type "٬";;
+    "#")
+    xdotool type "٫";;
+    "%")
+    xdotool type "٪";;
+    "^")
+    xdotool type "×";;
+    "&")
+    xdotool type "،";;
+    *)
+    xdotool type "$line";;
+  esac
+}
+sleep 1
+#copy clipboard
+clipboard=$(xclip -o -sel clip )
+#Spliting clipbord to letters and saving them in a text file in seperate lines
+echo $clipboard | grep -o . > /tmp/fingil.txt
+#checking encoding of file.utf8 is for persian.
+encode_type=$(file -bi /tmp/fingil.txt)
+#reading text file lines and converting them
+while read -r line;do
+  if [ "$encode_type" == "text/plain; charset=utf-8" ];then
+    case_function_per
+  else
+    case_function_en
+  fi
+done < /tmp/fingil.txt
+rm -r /tmp/fingil.txt
+exit
