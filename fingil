@@ -24,17 +24,18 @@ case_function_en () {
 
     echo "$arg"
 }
+#get active window PID
 window_pid=$(xdotool getactivewindow)
 #copy clipboard
 clipboard=$(xclip -o -sel clip )
 while [ -f /tmp/fingil.txt ];do
     sleep 0.5
 done    
-#Spliting clipbord to letters and saving them in a text file in seperate lines
+#send clipboard to a text file
 echo $clipboard > /tmp/fingil.txt
 #checking encoding of file.utf8 is for persian.
 encode_type=$(file -bi /tmp/fingil.txt)
-#reading text file lines and converting them
+#convert them according to encoding
 
 if [ "$encode_type" == "text/plain; charset=utf-8" ];then
     case_function_per $clipboard
