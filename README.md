@@ -17,7 +17,7 @@
 
 برای توزیع های بر اساس آرچ
 
-	$ sudo pacman -s xclip xdotool
+	$ sudo pacman -S xclip xdotool
 
 برای توزیع های بر اساس فدورا
 
