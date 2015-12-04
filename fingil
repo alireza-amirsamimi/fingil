@@ -27,6 +27,9 @@ case_function_en () {
 window_pid=$(xdotool getactivewindow)
 #copy clipboard
 clipboard=$(xclip -o -sel clip )
+while [ -f /tmp/fingil.txt ];do
+    sleep 0.5
+done    
 #Spliting clipbord to letters and saving them in a text file in seperate lines
 echo $clipboard > /tmp/fingil.txt
 #checking encoding of file.utf8 is for persian.
@@ -42,4 +45,5 @@ else
     sleep 1
     xdotool  type --delay 400 --window $window_pid "$(case_function_en $clipboard)"
 fi
+rm /tmp/fingil.txt
 exit
