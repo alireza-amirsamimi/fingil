@@ -216,6 +216,7 @@ case_function_en (){
 }
 sleep 1
 #copy clipboard
+xdotool getactivewindow windowfocus key ctrl+c
 clipboard=$(xclip -o -sel clip )
 #Spliting clipbord to letters and saving them in a text file in seperate lines
 echo $clipboard | grep -o . > /tmp/fingil.txt
