@@ -3,215 +3,215 @@
 case_function_per (){
   case "$line" in
     "ض")
-    xdotool type "q";;
+    xdotool getactivewindow windowfocus --sync type "q";;
     "ص")
-    xdotool type "w";;
+    xdotool getactivewindow windowfocus --sync type "w";;
     "ث")
-    xdotool type "e";;
+    xdotool getactivewindow windowfocus --sync type "e";;
     "ق")
-    xdotool type "r";;
+    xdotool getactivewindow windowfocus --sync type "r";;
     "ف")
-    xdotool type "t";;
+    xdotool getactivewindow windowfocus --sync type "t";;
     "غ")
-    xdotool type "y";;
+    xdotool getactivewindow windowfocus --sync type "y";;
     "ع")
-    xdotool type "u";;
+    xdotool getactivewindow windowfocus --sync type "u";;
     "ه")
-    xdotool type "i";;
+    xdotool getactivewindow windowfocus --sync type "i";;
     "خ")
-    xdotool type "o";;
+    xdotool getactivewindow windowfocus --sync type "o";;
     "ح")
-    xdotool type "p";;
+    xdotool getactivewindow windowfocus --sync type "p";;
     "ج")
-    xdotool type "[";;
+    xdotool getactivewindow windowfocus --sync type "[";;
     "چ")
-    xdotool type "]";;
+    xdotool getactivewindow windowfocus --sync type "]";;
     "ش")
-    xdotool type "a";;
+    xdotool getactivewindow windowfocus --sync type "a";;
     "س")
-    xdotool type "s";;
+    xdotool getactivewindow windowfocus --sync type "s";;
     "ی")
-    xdotool type "d";;
+    xdotool getactivewindow windowfocus --sync type "d";;
     "ب")
-    xdotool type "f";;
+    xdotool getactivewindow windowfocus --sync type "f";;
     "ل")
-    xdotool type "g";;
+    xdotool getactivewindow windowfocus --sync type "g";;
     "ا")
-    xdotool type "h";;
+    xdotool getactivewindow windowfocus --sync type "h";;
     "ت")
-    xdotool type "j";;
+    xdotool getactivewindow windowfocus --sync type "j";;
     "ن")
-    xdotool type "k";;
+    xdotool getactivewindow windowfocus --sync type "k";;
     "م")
-    xdotool type "l";;
+    xdotool getactivewindow windowfocus --sync type "l";;
     "ک")
-    xdotool type ";";;
+    xdotool getactivewindow windowfocus --sync type ";";;
     "گ")
-    xdotool type "'";;
+    xdotool getactivewindow windowfocus --sync type "'";;
     "ظ")
-    xdotool type "z";;
+    xdotool getactivewindow windowfocus --sync type "z";;
     "ط")
-    xdotool type "x";;
+    xdotool getactivewindow windowfocus --sync type "x";;
     "ز")
-    xdotool type "c";;
+    xdotool getactivewindow windowfocus --sync type "c";;
     "ر")
-    xdotool type "v";;
+    xdotool getactivewindow windowfocus --sync type "v";;
     "ذ")
-    xdotool type "b";;
+    xdotool getactivewindow windowfocus --sync type "b";;
     "د")
-    xdotool type "n";;
+    xdotool getactivewindow windowfocus --sync type "n";;
     "پ")
-    xdotool type "m";;
+    xdotool getactivewindow windowfocus --sync type "m";;
     "و")
-    xdotool type ",";;
+    xdotool getactivewindow windowfocus --sync type ",";;
     "ژ‍")
-    xdotool type "C";;
+    xdotool getactivewindow windowfocus --sync type "C";;
     "۱")
-    xdotool type "1";;
+    xdotool getactivewindow windowfocus --sync type "1";;
     "۲")
-    xdotool type "2";;
+    xdotool getactivewindow windowfocus --sync type "2";;
     "۳")
-    xdotool type "3";;
+    xdotool getactivewindow windowfocus --sync type "3";;
     "۴")
-    xdotool type "4";;
+    xdotool getactivewindow windowfocus --sync type "4";;
     "۵")
-    xdotool type "5";;
+    xdotool getactivewindow windowfocus --sync type "5";;
     "۶")
-    xdotool type "6";;
+    xdotool getactivewindow windowfocus --sync type "6";;
     "۷")
-    xdotool type "7";;
+    xdotool getactivewindow windowfocus --sync type "7";;
     "۸")
-    xdotool type "8";;
+    xdotool getactivewindow windowfocus --sync type "8";;
     "۹")
-    xdotool type "9";;
+    xdotool getactivewindow windowfocus --sync type "9";;
     "۰")
-    xdotool type "0";;
+    xdotool getactivewindow windowfocus --sync type "0";;
     "")
-    xdotool type " ";;
+    xdotool getactivewindow windowfocus --sync type " ";;
     ")")
-    xdotool type "(";;
+    xdotool getactivewindow windowfocus --sync type "(";;
     "(")
-    xdotool type ")";;
+    xdotool getactivewindow windowfocus --sync type ")";;
     "؟")
-    xdotool type "?";;
+    xdotool getactivewindow windowfocus --sync type "?";;
     "٬")
-    xdotool type "@";;
+    xdotool getactivewindow windowfocus --sync type "@";;
     "٪")
-    xdotool type "%";;
+    xdotool getactivewindow windowfocus --sync type "%";;
     "×")
-    xdotool type "^";;
+    xdotool getactivewindow windowfocus --sync type "^";;
     "،")
-    xdotool type "&";;
+    xdotool getactivewindow windowfocus --sync type "&";;
     *)
-    xdotool type "$line";;
+    xdotool getactivewindow windowfocus --sync type "$line";;
   esac
 }
 case_function_en (){
   case $line in
     "q"|"Q")
-    xdotool type "ض";;
+    xdotool getactivewindow windowfocus --sync type "ض";;
     "w"|"W")
-    xdotool type "ص";;
+    xdotool getactivewindow windowfocus --sync type "ص";;
     "e"|"E")
-    xdotool type "ث";;
+    xdotool getactivewindow windowfocus --sync type "ث";;
     "r"|"R")
-    xdotool type "ق";;
+    xdotool getactivewindow windowfocus --sync type "ق";;
     "t"|"T")
-    xdotool type "ف";;
+    xdotool getactivewindow windowfocus --sync type "ف";;
     "y"|"Y")
-    xdotool type "غ";;
+    xdotool getactivewindow windowfocus --sync type "غ";;
     "u"|"U")
-    xdotool type "ع";;
+    xdotool getactivewindow windowfocus --sync type "ع";;
     "i"|"I")
-    xdotool type "ه";;
+    xdotool getactivewindow windowfocus --sync type "ه";;
     "o"|"O")
-    xdotool type "خ";;
+    xdotool getactivewindow windowfocus --sync type "خ";;
     "p"|"P")
-    xdotool type "ح";;
+    xdotool getactivewindow windowfocus --sync type "ح";;
     "[")
-    xdotool type "ج";;
+    xdotool getactivewindow windowfocus --sync type "ج";;
     "]")
-    xdotool type "چ";;
+    xdotool getactivewindow windowfocus --sync type "چ";;
     "a"|"A")
-    xdotool type "ش";;
+    xdotool getactivewindow windowfocus --sync type "ش";;
     "s"|"S")
-    xdotool type "س";;
+    xdotool getactivewindow windowfocus --sync type "س";;
     "d"|"D")
-    xdotool type "ی";;
+    xdotool getactivewindow windowfocus --sync type "ی";;
     "f"|"F")
-    xdotool type "ب";;
+    xdotool getactivewindow windowfocus --sync type "ب";;
     "g"|"G")
-    xdotool type "ل";;
+    xdotool getactivewindow windowfocus --sync type "ل";;
     "h"|"H")
-    xdotool type "ا";;
+    xdotool getactivewindow windowfocus --sync type "ا";;
     "j"|"J")
-    xdotool type "ت";;
+    xdotool getactivewindow windowfocus --sync type "ت";;
     "k"|"K")
-    xdotool type "ن";;
+    xdotool getactivewindow windowfocus --sync type "ن";;
     "l"|"L")
-    xdotool type "م";;
+    xdotool getactivewindow windowfocus --sync type "م";;
     ";")
-    xdotool type "ک";;
+    xdotool getactivewindow windowfocus --sync type "ک";;
     "'")
-    xdotool type "گ";;
+    xdotool getactivewindow windowfocus --sync type "گ";;
     "z"|"Z")
-    xdotool type "ظ";;
+    xdotool getactivewindow windowfocus --sync type "ظ";;
     "x"|"X")
-    xdotool type "ط";;
+    xdotool getactivewindow windowfocus --sync type "ط";;
     "c")
-    xdotool type "ز";;
+    xdotool getactivewindow windowfocus --sync type "ز";;
     "v"|"V")
-    xdotool type "ر";;
+    xdotool getactivewindow windowfocus --sync type "ر";;
     "b"|"B")
-    xdotool type "ذ";;
+    xdotool getactivewindow windowfocus --sync type "ذ";;
     "n"|"N")
-    xdotool type "د";;
+    xdotool getactivewindow windowfocus --sync type "د";;
     "m"|"M")
-    xdotool type "پ";;
+    xdotool getactivewindow windowfocus --sync type "پ";;
     ",")
-    xdotool type "و";;
+    xdotool getactivewindow windowfocus --sync type "و";;
     "C")
-    xdotool type "ژ";;
+    xdotool getactivewindow windowfocus --sync type "ژ";;
     "1")
-    xdotool type "۱";;
+    xdotool getactivewindow windowfocus --sync type "۱";;
     "2")
-    xdotool type "۲";;
+    xdotool getactivewindow windowfocus --sync type "۲";;
     "3")
-    xdotool type "۳";;
+    xdotool getactivewindow windowfocus --sync type "۳";;
     "4")
-    xdotool type "۴";;
+    xdotool getactivewindow windowfocus --sync type "۴";;
     "5")
-    xdotool type "۵";;
+    xdotool getactivewindow windowfocus --sync type "۵";;
     "6")
-    xdotool type "۶";;
+    xdotool getactivewindow windowfocus --sync type "۶";;
     "7")
-    xdotool type "۷";;
+    xdotool getactivewindow windowfocus --sync type "۷";;
     "8")
-    xdotool type "۸";;
+    xdotool getactivewindow windowfocus --sync type "۸";;
     "9")
-    xdotool type "۹";;
+    xdotool getactivewindow windowfocus --sync type "۹";;
     "0")
-    xdotool type "۰";;
+    xdotool getactivewindow windowfocus --sync type "۰";;
     "?")
-    xdotool type "؟";;
+    xdotool getactivewindow windowfocus --sync type "؟";;
     "(")
-    xdotool type ")";;
+    xdotool getactivewindow windowfocus --sync type ")";;
     ")")
-    xdotool type "(";;
+    xdotool getactivewindow windowfocus --sync type "(";;
     "")
-    xdotool type " ";;
+    xdotool getactivewindow windowfocus --sync type " ";;
     "@")
-    xdotool type "٬";;
+    xdotool getactivewindow windowfocus --sync type "٬";;
     "#")
-    xdotool type "٫";;
+    xdotool getactivewindow windowfocus --sync type "٫";;
     "%")
-    xdotool type "٪";;
+    xdotool getactivewindow windowfocus --sync type "٪";;
     "^")
-    xdotool type "×";;
+    xdotool getactivewindow windowfocus --sync type "×";;
     "&")
-    xdotool type "،";;
+    xdotool getactivewindow windowfocus --sync type "،";;
     *)
-    xdotool type "$line";;
+    xdotool getactivewindow windowfocus --sync type "$line";;
   esac
 }
 sleep 1
