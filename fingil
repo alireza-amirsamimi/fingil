@@ -3,226 +3,228 @@
 case_function_per (){
   case "$line" in
     "ض")
-    xdotool getactivewindow windowfocus --sync type "q";;
+    xdotool type --window $window_pid "q"  ;;
     "ص")
-    xdotool getactivewindow windowfocus --sync type "w";;
+    xdotool type --window $window_pid "w"  ;;
     "ث")
-    xdotool getactivewindow windowfocus --sync type "e";;
+    xdotool type --window $window_pid "e"  ;;
     "ق")
-    xdotool getactivewindow windowfocus --sync type "r";;
+    xdotool type --window $window_pid "r"  ;;
     "ف")
-    xdotool getactivewindow windowfocus --sync type "t";;
+    xdotool type --window $window_pid "t"  ;;
     "غ")
-    xdotool getactivewindow windowfocus --sync type "y";;
+    xdotool type --window $window_pid "y"  ;;
     "ع")
-    xdotool getactivewindow windowfocus --sync type "u";;
+    xdotool type --window $window_pid "u"  ;;
     "ه")
-    xdotool getactivewindow windowfocus --sync type "i";;
+    xdotool type --window $window_pid "i"  ;;
     "خ")
-    xdotool getactivewindow windowfocus --sync type "o";;
+    xdotool type --window $window_pid "o"  ;;
     "ح")
-    xdotool getactivewindow windowfocus --sync type "p";;
+    xdotool type --window $window_pid "p"  ;;
     "ج")
-    xdotool getactivewindow windowfocus --sync type "[";;
+    xdotool type --window $window_pid "["  ;;
     "چ")
-    xdotool getactivewindow windowfocus --sync type "]";;
+    xdotool type --window $window_pid "]"  ;;
     "ش")
-    xdotool getactivewindow windowfocus --sync type "a";;
+    xdotool type --window $window_pid "a"  ;;
     "س")
-    xdotool getactivewindow windowfocus --sync type "s";;
+    xdotool type --window $window_pid "s"  ;;
     "ی")
-    xdotool getactivewindow windowfocus --sync type "d";;
+    xdotool type --window $window_pid "d"  ;;
     "ب")
-    xdotool getactivewindow windowfocus --sync type "f";;
+    xdotool type --window $window_pid "f"  ;;
     "ل")
-    xdotool getactivewindow windowfocus --sync type "g";;
+    xdotool type --window $window_pid "g"  ;;
     "ا")
-    xdotool getactivewindow windowfocus --sync type "h";;
+    xdotool type --window $window_pid "h"  ;;
     "ت")
-    xdotool getactivewindow windowfocus --sync type "j";;
+    xdotool type --window $window_pid "j"  ;;
     "ن")
-    xdotool getactivewindow windowfocus --sync type "k";;
+    xdotool type --window $window_pid "k"  ;;
     "م")
-    xdotool getactivewindow windowfocus --sync type "l";;
+    xdotool type --window $window_pid "l"  ;;
     "ک")
-    xdotool getactivewindow windowfocus --sync type ";";;
+    xdotool type --window $window_pid ";"  ;;
     "گ")
-    xdotool getactivewindow windowfocus --sync type "'";;
+    xdotool type --window $window_pid "'"  ;;
     "ظ")
-    xdotool getactivewindow windowfocus --sync type "z";;
+    xdotool type --window $window_pid "z"  ;;
     "ط")
-    xdotool getactivewindow windowfocus --sync type "x";;
+    xdotool type --window $window_pid "x"  ;;
     "ز")
-    xdotool getactivewindow windowfocus --sync type "c";;
+    xdotool type --window $window_pid "c"  ;;
     "ر")
-    xdotool getactivewindow windowfocus --sync type "v";;
+    xdotool type --window $window_pid "v"  ;;
     "ذ")
-    xdotool getactivewindow windowfocus --sync type "b";;
+    xdotool type --window $window_pid "b"  ;;
     "د")
-    xdotool getactivewindow windowfocus --sync type "n";;
+    xdotool type --window $window_pid "n"  ;;
     "پ")
-    xdotool getactivewindow windowfocus --sync type "m";;
+    xdotool type --window $window_pid "m"  ;;
     "و")
-    xdotool getactivewindow windowfocus --sync type ",";;
+    xdotool type --window $window_pid ","  ;;
     "ژ‍")
-    xdotool getactivewindow windowfocus --sync type "C";;
+    xdotool type --window $window_pid "C"  ;;
     "۱")
-    xdotool getactivewindow windowfocus --sync type "1";;
+    xdotool type --window $window_pid "1"  ;;
     "۲")
-    xdotool getactivewindow windowfocus --sync type "2";;
+    xdotool type --window $window_pid "2"  ;;
     "۳")
-    xdotool getactivewindow windowfocus --sync type "3";;
+    xdotool type --window $window_pid "3"  ;;
     "۴")
-    xdotool getactivewindow windowfocus --sync type "4";;
+    xdotool type --window $window_pid "4"  ;;
     "۵")
-    xdotool getactivewindow windowfocus --sync type "5";;
+    xdotool type --window $window_pid "5"  ;;
     "۶")
-    xdotool getactivewindow windowfocus --sync type "6";;
+    xdotool type --window $window_pid "6"  ;;
     "۷")
-    xdotool getactivewindow windowfocus --sync type "7";;
+    xdotool type --window $window_pid "7"  ;;
     "۸")
-    xdotool getactivewindow windowfocus --sync type "8";;
+    xdotool type --window $window_pid "8"  ;;
     "۹")
-    xdotool getactivewindow windowfocus --sync type "9";;
+    xdotool type --window $window_pid "9"  ;;
     "۰")
-    xdotool getactivewindow windowfocus --sync type "0";;
+    xdotool type --window $window_pid "0"  ;;
     "")
-    xdotool getactivewindow windowfocus --sync type " ";;
+    xdotool type --window $window_pid " "  ;;
     ")")
-    xdotool getactivewindow windowfocus --sync type "(";;
+    xdotool type --window $window_pid "("  ;;
     "(")
-    xdotool getactivewindow windowfocus --sync type ")";;
+    xdotool type --window $window_pid ")"  ;;
     "؟")
-    xdotool getactivewindow windowfocus --sync type "?";;
+    xdotool type --window $window_pid "?"  ;;
     "٬")
-    xdotool getactivewindow windowfocus --sync type "@";;
+    xdotool type --window $window_pid "@"  ;;
     "٪")
-    xdotool getactivewindow windowfocus --sync type "%";;
+    xdotool type --window $window_pid "%"  ;;
     "×")
-    xdotool getactivewindow windowfocus --sync type "^";;
+    xdotool type --window $window_pid "^"  ;;
     "،")
-    xdotool getactivewindow windowfocus --sync type "&";;
+    xdotool type --window $window_pid "&"  ;;
     *)
-    xdotool getactivewindow windowfocus --sync type "$line";;
+    xdotool type --window $window_pid "$line"  ;;
   esac
 }
 case_function_en (){
   case $line in
     "q"|"Q")
-    xdotool getactivewindow windowfocus --sync type "ض";;
+    xdotool type --window $window_pid "ض"  ;;
     "w"|"W")
-    xdotool getactivewindow windowfocus --sync type "ص";;
+    xdotool type --window $window_pid "ص"  ;;
     "e"|"E")
-    xdotool getactivewindow windowfocus --sync type "ث";;
+    xdotool type --window $window_pid "ث"  ;;
     "r"|"R")
-    xdotool getactivewindow windowfocus --sync type "ق";;
+    xdotool type --window $window_pid "ق"  ;;
     "t"|"T")
-    xdotool getactivewindow windowfocus --sync type "ف";;
+    xdotool type --window $window_pid "ف"  ;;
     "y"|"Y")
-    xdotool getactivewindow windowfocus --sync type "غ";;
+    xdotool type --window $window_pid "غ"  ;;
     "u"|"U")
-    xdotool getactivewindow windowfocus --sync type "ع";;
+    xdotool type --window $window_pid "ع"  ;;
     "i"|"I")
-    xdotool getactivewindow windowfocus --sync type "ه";;
+    xdotool type --window $window_pid "ه"  ;;
     "o"|"O")
-    xdotool getactivewindow windowfocus --sync type "خ";;
+    xdotool type --window $window_pid "خ"  ;;
     "p"|"P")
-    xdotool getactivewindow windowfocus --sync type "ح";;
+    xdotool type --window $window_pid "ح"  ;;
     "[")
-    xdotool getactivewindow windowfocus --sync type "ج";;
+    xdotool type --window $window_pid "ج"  ;;
     "]")
-    xdotool getactivewindow windowfocus --sync type "چ";;
+    xdotool type --window $window_pid "چ"  ;;
     "a"|"A")
-    xdotool getactivewindow windowfocus --sync type "ش";;
+    xdotool type --window $window_pid "ش"  ;;
     "s"|"S")
-    xdotool getactivewindow windowfocus --sync type "س";;
+    xdotool type --window $window_pid "س"  ;;
     "d"|"D")
-    xdotool getactivewindow windowfocus --sync type "ی";;
+    xdotool type --window $window_pid "ی"  ;;
     "f"|"F")
-    xdotool getactivewindow windowfocus --sync type "ب";;
+    xdotool type --window $window_pid "ب"  ;;
     "g"|"G")
-    xdotool getactivewindow windowfocus --sync type "ل";;
+    xdotool type --window $window_pid "ل"  ;;
     "h"|"H")
-    xdotool getactivewindow windowfocus --sync type "ا";;
+    xdotool type --window $window_pid "ا"  ;;
     "j"|"J")
-    xdotool getactivewindow windowfocus --sync type "ت";;
+    xdotool type --window $window_pid "ت"  ;;
     "k"|"K")
-    xdotool getactivewindow windowfocus --sync type "ن";;
+    xdotool type --window $window_pid "ن"  ;;
     "l"|"L")
-    xdotool getactivewindow windowfocus --sync type "م";;
+    xdotool type --window $window_pid "م"  ;;
     ";")
-    xdotool getactivewindow windowfocus --sync type "ک";;
+    xdotool type --window $window_pid "ک"  ;;
     "'")
-    xdotool getactivewindow windowfocus --sync type "گ";;
+    xdotool type --window $window_pid "گ"  ;;
     "z"|"Z")
-    xdotool getactivewindow windowfocus --sync type "ظ";;
+    xdotool type --window $window_pid "ظ"  ;;
     "x"|"X")
-    xdotool getactivewindow windowfocus --sync type "ط";;
+    xdotool type --window $window_pid "ط"  ;;
     "c")
-    xdotool getactivewindow windowfocus --sync type "ز";;
+    xdotool type --window $window_pid "ز"  ;;
     "v"|"V")
-    xdotool getactivewindow windowfocus --sync type "ر";;
+    xdotool type --window $window_pid "ر"  ;;
     "b"|"B")
-    xdotool getactivewindow windowfocus --sync type "ذ";;
+    xdotool type --window $window_pid "ذ"  ;;
     "n"|"N")
-    xdotool getactivewindow windowfocus --sync type "د";;
+    xdotool type --window $window_pid "د"  ;;
     "m"|"M")
-    xdotool getactivewindow windowfocus --sync type "پ";;
+    xdotool type --window $window_pid "پ"  ;;
     ",")
-    xdotool getactivewindow windowfocus --sync type "و";;
+    xdotool type --window $window_pid "و"  ;;
     "C")
-    xdotool getactivewindow windowfocus --sync type "ژ";;
+    xdotool type --window $window_pid "ژ"  ;;
     "1")
-    xdotool getactivewindow windowfocus --sync type "۱";;
+    xdotool type --window $window_pid "۱"  ;;
     "2")
-    xdotool getactivewindow windowfocus --sync type "۲";;
+    xdotool type --window $window_pid "۲"  ;;
     "3")
-    xdotool getactivewindow windowfocus --sync type "۳";;
+    xdotool type --window $window_pid "۳"  ;;
     "4")
-    xdotool getactivewindow windowfocus --sync type "۴";;
+    xdotool type --window $window_pid "۴"  ;;
     "5")
-    xdotool getactivewindow windowfocus --sync type "۵";;
+    xdotool type --window $window_pid "۵"  ;;
     "6")
-    xdotool getactivewindow windowfocus --sync type "۶";;
+    xdotool type --window $window_pid "۶"  ;;
     "7")
-    xdotool getactivewindow windowfocus --sync type "۷";;
+    xdotool type --window $window_pid "۷"  ;;
     "8")
-    xdotool getactivewindow windowfocus --sync type "۸";;
+    xdotool type --window $window_pid "۸"  ;;
     "9")
-    xdotool getactivewindow windowfocus --sync type "۹";;
+    xdotool type --window $window_pid "۹"  ;;
     "0")
-    xdotool getactivewindow windowfocus --sync type "۰";;
+    xdotool type --window $window_pid "۰"  ;;
     "?")
-    xdotool getactivewindow windowfocus --sync type "؟";;
+    xdotool type --window $window_pid "؟"  ;;
     "(")
-    xdotool getactivewindow windowfocus --sync type ")";;
+    xdotool type --window $window_pid ")"  ;;
     ")")
-    xdotool getactivewindow windowfocus --sync type "(";;
+    xdotool type --window $window_pid "("  ;;
     "")
-    xdotool getactivewindow windowfocus --sync type " ";;
+    xdotool type --window $window_pid " "  ;;
     "@")
-    xdotool getactivewindow windowfocus --sync type "٬";;
+    xdotool type --window $window_pid "٬"  ;;
     "#")
-    xdotool getactivewindow windowfocus --sync type "٫";;
+    xdotool type --window $window_pid "٫"  ;;
     "%")
-    xdotool getactivewindow windowfocus --sync type "٪";;
+    xdotool type --window $window_pid "٪"  ;;
     "^")
-    xdotool getactivewindow windowfocus --sync type "×";;
+    xdotool type --window $window_pid "×"  ;;
     "&")
-    xdotool getactivewindow windowfocus --sync type "،";;
+    xdotool type --window $window_pid "،"  ;;
     *)
-    xdotool getactivewindow windowfocus --sync type "$line";;
+    xdotool type --window $window_pid "$line"  ;;
   esac
 }
-sleep 1
+window_pid=$(xdotool getactivewindow)
 #copy clipboard
-xdotool getactivewindow windowfocus key ctrl+c
+
+ 
 clipboard=$(xclip -o -sel clip )
 #Spliting clipbord to letters and saving them in a text file in seperate lines
 echo $clipboard | grep -o . > /tmp/fingil.txt
 #checking encoding of file.utf8 is for persian.
 encode_type=$(file -bi /tmp/fingil.txt)
 #reading text file lines and converting them
+sleep 1
 while read -r line;do
   if [ "$encode_type" == "text/plain; charset=utf-8" ];then
     case_function_per
@@ -230,5 +232,5 @@ while read -r line;do
     case_function_en
   fi
 done < /tmp/fingil.txt
-rm -r /tmp/fingil.txt
+
 exit
