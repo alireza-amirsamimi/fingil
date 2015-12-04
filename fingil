@@ -1,5 +1,5 @@
 #!/bin/bash
-#Figil written by alireza.amirsamimi@ubuntu.ir based on two scripts that written by fzero@rubi.gd 
+#Fingil written by alireza.amirsamimi@ubuntu.ir based on two scripts that written by fzero@rubi.gd 
 
 case_function_per () {
     persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ )
@@ -16,12 +16,14 @@ case_function_per () {
 case_function_en () {
     persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ )
     english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
+    english_capital=( Q W E R T Y U I O P \[ \] A S D F G H J K L \; \' Z X C V B N M , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
     len=$(echo ${#persian[*]})
     arg=$@
     for ((i=1 ; i < $len ; i++)) do
         arg=${arg//${english[$i]}/${persian[$i]}}
+        arg=${arg//${english_capital[$i]}/${persian[$i]}}
     done
-
+    	
     echo "$arg"
 }
 #get active window PID
