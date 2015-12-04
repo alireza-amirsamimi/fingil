@@ -108,65 +108,65 @@ case_function_per (){
 }
 case_function_en (){
   case $line in
-    "q")
+    "q"|"Q")
     xdotool type "ض";;
-    "w")
+    "w"|"W")
     xdotool type "ص";;
-    "e")
+    "e"|"E")
     xdotool type "ث";;
-    "r")
+    "r"|"R")
     xdotool type "ق";;
-    "t")
+    "t"|"T")
     xdotool type "ف";;
-    "y")
+    "y"|"Y")
     xdotool type "غ";;
-    "u")
+    "u"|"U")
     xdotool type "ع";;
-    "i")
+    "i"|"I")
     xdotool type "ه";;
-    "o")
+    "o"|"O")
     xdotool type "خ";;
-    "p")
+    "p"|"P")
     xdotool type "ح";;
     "[")
     xdotool type "ج";;
     "]")
     xdotool type "چ";;
-    "a")
+    "a"|"A")
     xdotool type "ش";;
-    "s")
+    "s"|"S")
     xdotool type "س";;
-    "d")
+    "d"|"D")
     xdotool type "ی";;
-    "f")
+    "f"|"F")
     xdotool type "ب";;
-    "g")
+    "g"|"G")
     xdotool type "ل";;
-    "h")
+    "h"|"H")
     xdotool type "ا";;
-    "j")
+    "j"|"J")
     xdotool type "ت";;
-    "k")
+    "k"|"K")
     xdotool type "ن";;
-    "l")
+    "l"|"L")
     xdotool type "م";;
     ";")
     xdotool type "ک";;
     "'")
     xdotool type "گ";;
-    "z")
+    "z"|"Z")
     xdotool type "ظ";;
-    "x")
+    "x"|"X")
     xdotool type "ط";;
     "c")
     xdotool type "ز";;
-    "v")
+    "v"|"V")
     xdotool type "ر";;
-    "b")
+    "b"|"B")
     xdotool type "ذ";;
-    "n")
+    "n"|"N")
     xdotool type "د";;
-    "m")
+    "m"|"M")
     xdotool type "پ";;
     ",")
     xdotool type "و";;
