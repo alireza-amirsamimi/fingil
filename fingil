@@ -1,7 +1,7 @@
 #!/bin/bash
 #Fingil written by alireza.amirsamimi@ubuntu.ir based on two scripts that written by fzero@rubi.gd 
 
-case_function_per () {
+for_function_per () {
     persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ )
     english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
     len=$(echo ${#english[*]})
@@ -13,9 +13,9 @@ case_function_per () {
     echo "$arg"
 }
 
-case_function_en () {
-    persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ )
-    english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
+for_function_en () {
+    persian=( ض ژ ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ )
+    english=( q  C w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
     english_capital=( Q W E R T Y U I O P \[ \] A S D F G H J K L \; \' Z X C V B N M , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
     len=$(echo ${#persian[*]})
     arg=$@
@@ -35,18 +35,18 @@ while [ -f /tmp/fingil.txt ];do
 done    
 #send clipboard to a text file
 echo $clipboard > /tmp/fingil.txt
-#checking encoding of file.utf8 is for persian.
+#checking encoding of file.utf8 is for persian language.
 encode_type=$(file -bi /tmp/fingil.txt)
-#convert them according to encoding
+#convert them according to the encoding
 
 if [ "$encode_type" == "text/plain; charset=utf-8" ];then
-    case_function_per $clipboard
+    for_function_per $clipboard
     sleep 1
-    xdotool type --delay 400 --window $window_pid "$(case_function_per $clipboard)"
+    xdotool type --delay 400 --window $window_pid "$(for_function_per $clipboard)"
 else
-    case_function_en  $clipboard
+    for_function_en  $clipboard
     sleep 1
-    xdotool  type --delay 400 --window $window_pid "$(case_function_en $clipboard)"
+    xdotool  type --delay 400 --window $window_pid "$(for_function_en $clipboard)"
 fi
 rm /tmp/fingil.txt
 exit
