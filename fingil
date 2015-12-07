@@ -1,22 +1,9 @@
 #!/bin/bash
-<<<<<<< HEAD
-#Fingil written by alireza.amirsamimi@ubuntu.ir based on two scripts that written by fzero@rubi.gd 
-#Fingil Version 1.00
-
-for_function_per () {
-    persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ آ ژ )
-    english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' H C )
-    len=$(echo ${#english[*]})
-    arg=$@
-    for ((i=1 ; i < $len ; i++)) do
-        arg=${arg//${persian[$i]}/${english[$i]}}
-    done
-=======
-
+#Fingli written by alireza.amirsamimi@gmail.com & https://github.com/alireaza & fzero@rubi.gd
+#Version 1.00
 convert () {
     text=$@
     out=""
->>>>>>> 5c59bd11afe2a0ec46c11b0b08acdd75a9acb04b
 
     for i in $(seq 0 $((${#text} - 1))); do
         hex=$(echo "${text:$i:1}" | xxd -p)
@@ -507,30 +494,14 @@ convert () {
             ;;
         esac
 
-<<<<<<< HEAD
-for_function_en () {
-    persian=( ض ص ث ق ف غ ع ه خ ح ج چ ش س ی ب ل ا ت ن م ک گ ظ ط ز ر ذ د پ و ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰ ! ٬ ٫ ﷼ ٪ × ، ؛ آ ژ )
-    english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' H C )
-    english_capital=( Q W E R T Y U I O P \[ \] A S D F G H J K L \; \' Z X C V B N M , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \' )
-    len=$(echo ${#persian[*]})
-    arg=$@
-    for ((i=1 ; i < $len ; i++)) do
-        arg=${arg//${english[$i]}/${persian[$i]}}
-    done
-    for ((i=1 ; i < $len ; i++)) do
-        arg=${arg//${english_capital[$i]}/${persian[$i]}}
-    done	
-    echo "$arg"
-=======
         out=$(echo "$out" | xxd -p -r)
         echo -ne "$out"\\r
     done
->>>>>>> 5c59bd11afe2a0ec46c11b0b08acdd75a9acb04b
 }
 
 window_pid=$(xdotool getactivewindow)
 clipboard=$(xclip -o -sel clip )
 
-xdotool type --delay 600 --window $window_pid "$(convert $clipboard)"
+xdotool type --delay 400 --window $window_pid "$(convert $clipboard)"
 
 exit
