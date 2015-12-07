@@ -1,14 +1,16 @@
 #!/bin/bash
+
 #Fingli written by alireza.amirsamimi@gmail.com & https://github.com/alireaza & fzero@rubi.gd
-#Version 1.00
+#Fingil Version 1.00
+
 convert () {
-    text=$@
-    out=""
+    text=$@ #get arguments and set to variable
+    out="" #set variable
 
-    for i in $(seq 0 $((${#text} - 1))); do
-        hex=$(echo "${text:$i:1}" | xxd -p)
+    for i in $(seq 0 $((${#text} - 1))); do #split charactor
+        hex=$(echo "${text:$i:1}" | xxd -p) #convert ASCII to HEX
 
-        case "$hex" in
+        case "$hex" in #convert HEXs
             "220a") #"
                 out="d89b0a" #؛
             ;;
@@ -494,13 +496,13 @@ convert () {
             ;;
         esac
 
-        out=$(echo "$out" | xxd -p -r)
-        echo -ne "$out"\\r
+        out=$(echo "$out" | xxd -p -r) #convert HEX to ACSII
+        echo -ne "$out"\\r #return out variable
     done
 }
 
-window_pid=$(xdotool getactivewindow)
-clipboard=$(xclip -o -sel clip )
+window_pid=$(xdotool getactivewindow) #get active window PID
+clipboard=$(xclip -o -sel clip ) #copy clipboard
 
 xdotool type --delay 400 --window $window_pid "$(convert $clipboard)"
 
